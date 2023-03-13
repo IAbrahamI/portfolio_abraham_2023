@@ -25,8 +25,7 @@ import kbw from "./company/KBW.png";
 import juliusbaer from "./company/JuliusBaer.jpg";
 
 import voronoi from "./voronoi.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import newsapp from "./newsapp.png";
 
 export {
   logo,
@@ -53,6 +52,5 @@ export {
   kbw,
   juliusbaer,
   voronoi,
-  jobit,
-  tripguide,
+  newsapp
 };

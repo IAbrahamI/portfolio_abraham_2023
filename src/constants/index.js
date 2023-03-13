@@ -17,8 +17,7 @@ import {
     kbw,
     juliusbaer,
     voronoi,
-    jobit,
-    tripguide,
+    newsapp,
     threejs,
     blender
   } from "../assets";
@@ -210,7 +209,7 @@ import {
           name: " Expo",
         },
       ],
-      image: "",
+      image: newsapp,
       source_code_link: "https://github.com/IAbrahamI/NewsUpToDateApp",
     }
   ];
