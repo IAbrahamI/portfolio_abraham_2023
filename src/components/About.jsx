@@ -26,10 +26,14 @@ const About = () => {
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>About me.</h2>
       </motion.div>
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]">
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]">
         I'm a software engineer with experience in Python, Javascript, Java and expertise in frameworks like React, Node.js, Next.js, Vite, Three.js. 
         I'm a quick and logical lerner who likes to be up to date with the newest generation of frameworks and components to improve my skills. 
-        I also like working agile as it allows me to be more flexible and open minded when collaborating with clients or end-users. 
+        I also like working agile as it allows me to be more flexible and open minded when collaborating with clients or end-users.
+      </motion.p>
+      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-6xl leading-[30px]">
+        Since I was born in Colombia I'm currently able to speak in a variety of four different languages such as spanish being my native language, german and english, which I use daily and lastly french, which I learned at school.
+        To keep myself healthy I do sport four to five times a week and to relax I play the guitar.
       </motion.p>
       <div className="mt-20 flex flex-wrap justify-center gap-10">
         {services.map((service, index)=>(

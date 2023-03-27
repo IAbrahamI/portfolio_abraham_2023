@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import Experience from './components/Experience';
 import Works from './components/Works';
-import Feedback from './components/Feedbacks';
 import Tech from './components/Tech';
 import Contact from './components/Contact';
 import { StarsCanvas } from './components/canvas';

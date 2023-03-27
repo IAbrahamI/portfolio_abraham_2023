@@ -43,10 +43,6 @@ import {
       icon: web,
     },
     {
-      title: "React/Next/Vite Developer",
-      icon: mobile,
-    },
-    {
       title: "Automation Developer",
       icon: automation,
     },
@@ -125,15 +121,15 @@ import {
       ],
     },
     {
-      title: "Praktikum",
+      title: "Internship",
       company_name: "Julius Baer",
       icon: juliusbaer,
       iconBg: "#141D54",
       date: "Aug 2021 - July 2022",
       points: [
-        "Praktikum needed for getting my final degree as Software Engineer",
+        "This internship was needed for my final degree as Software Engineer",
         "Implemented automations with Python scripts, which run weekly",
-        "First approach with big Data clusters",
+        "First approach with big Data clusters and analysis",
         "Worked with an agile approach",
       ],
     },
@@ -148,33 +144,6 @@ import {
         "Managed access rights for all end-users and applications",
         "Implemented new approach to simplify the onboarding of end-users",
       ],
-    },
-  ];
-  
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
   ];
   
@@ -214,4 +183,4 @@ import {
     }
   ];
   
-  export { services, technologies, experiences, testimonials, projects };
+  export { services, technologies, experiences, projects };
