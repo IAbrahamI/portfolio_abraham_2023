@@ -1,5 +1,4 @@
 import {
-    mobile,
     animation,
     automation,
     web,

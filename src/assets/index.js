@@ -1,7 +1,6 @@
 import logo from "./logo.png";
 import animation from "./animation.png";
 import automation from "./automation.png";
-import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
@@ -31,7 +30,6 @@ export {
   logo,
   animation,
   automation,
-  mobile,
   web,
   github,
   menu,
