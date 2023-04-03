@@ -11,7 +11,7 @@ const Home = () => {
           <div className="w-5 h-5 rounded-full bg-[#915eff]"/>
           <div className="w-1 sm:h-80 h-40 violet-gradient"/>
         </div>
-        <div>
+        <div className="">
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Abraham</span></h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             I'm a <span className="text-[#915eff]">software engineer</span> developing <br className="sm:block hidden"/> new automations, animations and webpages</p>

@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Room = ({ isMobile }) => {
+const Room = ({ isMobile, isMedium }) => {
   const room = useGLTF("./room/room.glb");
 
   return (
@@ -19,8 +19,8 @@ const Room = ({ isMobile }) => {
       <pointLight intensity={1} />
       <primitive
         object={room.scene}
-        scale={isMobile ? 0.4 : 0.75}
-        position={isMobile ? [0, -1.8, 0] : [0, -2, 0]}
+        scale={isMobile ? 0.4 : isMedium ? 0.5 : 0.75}
+        position={isMobile ? [0, -1.8, 0] : isMedium ? [0, -2.5, 0] : [0, -2.2, 0]}
         rotation={[0.01, -0.2,0]}
       />
     </mesh>
@@ -29,21 +29,39 @@ const Room = ({ isMobile }) => {
 
 const RoomCanvas = () => {
   const [isMobile, setIsMobile] = useState(false);
+  const [isMedium, setIsMedium] = useState(false);
 
   useEffect(() => {
     // Add a listener for changes to the screen size
-    const mediaQuery = window.matchMedia("(max-width: 500px)");
+    const mediaQuerySmallDevice = window.matchMedia("(max-width: 500px)");
     // Set the initial value of the `isMobile` state variable
-    setIsMobile(mediaQuery.matches);
+    setIsMobile(mediaQuerySmallDevice.matches);
     // Define a callback function to handle changes to the media query
     const handleMediaQueryChange = (event) => {
       setIsMobile(event.matches);
     };
     // Add the callback function as a listener for changes to the media query
-    mediaQuery.addEventListener("change", handleMediaQueryChange);
+    mediaQuerySmallDevice.addEventListener("change", handleMediaQueryChange);
     // Remove the listener when the component is unmounted
     return () => {
-      mediaQuery.removeEventListener("change", handleMediaQueryChange);
+      mediaQuerySmallDevice.removeEventListener("change", handleMediaQueryChange);
+    };
+  }, []);
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQueryMediumDevice = window.matchMedia("(max-width: 800px)");
+    // Set the initial value of the `isMobile` state variable
+    setIsMedium(mediaQueryMediumDevice.matches);
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      setIsMedium(event.matches);
+    };
+    // Add the callback function as a listener for changes to the media query
+    mediaQueryMediumDevice.addEventListener("change", handleMediaQueryChange);
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQueryMediumDevice.removeEventListener("change", handleMediaQueryChange);
     };
   }, []);
 
@@ -63,7 +81,7 @@ const RoomCanvas = () => {
           maxPolarAngle={Math.PI / -1}
           minPolarAngle={Math.PI / 2}
         />
-        <Room isMobile={isMobile} />
+        <Room isMobile={isMobile} isMedium={isMedium}/>
       </Suspense>
 
       <Preload all />
