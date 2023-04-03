@@ -8,7 +8,6 @@ import {
     html,
     css,
     reactjs,
-    nextjs,
     vite,
     tailwind,
     mongodb,
@@ -77,10 +76,6 @@ import {
       icon: reactjs,
     },
     {
-      name: "NextJs",
-      icon: nextjs,
-    },
-    {
       name: "Vite",
       icon: vite,
     },
@@ -93,7 +88,7 @@ import {
       icon: mongodb,
     },
     {
-      name: "git",
+      name: "Git",
       icon: git,
     },
     {

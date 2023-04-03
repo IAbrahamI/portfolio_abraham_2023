@@ -17,7 +17,7 @@ import mongodb from "./tech/mongodb.png";
 import reactjs from "./tech/reactjs.png";
 import vite from "./tech/vite.png";
 import tailwind from "./tech/tailwind.png";
-import threejs from "./tech/threejs.svg";
+import threejs from "./tech/threejs.png";
 import blender from "./tech/blender.png";
 
 import kbw from "./company/KBW.png";
